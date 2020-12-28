@@ -120,7 +120,7 @@ median(StepsPerDayFull$Steps)
 
 -Imputing missing data in this case has not made a major difference to the final result, however other methods for replace missing values and the variations in dataset may result in different outcomes.
 
-## 4. Are there differences in activity patterns between weekdays and weekends?
+## 5. Are there differences in activity patterns between weekdays and weekends?
 
 #Create a new factor variable in the dataset with two levels - “weekday” and “weekend”.
 
@@ -145,4 +145,5 @@ j+geom_line(col="darkgreen")+ggtitle("Average steps per time interval: Weekdays 
 ```
 
 rmarkdown::render("PA1_template.Rmd")
+
 
