@@ -2,6 +2,7 @@
 output: 
   html_document: 
     keep_md: yes
+    output: github_document
 ---
 ---
 title: "Reproducible Research 1"
