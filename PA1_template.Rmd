@@ -1,11 +1,10 @@
 ---
-output: 
-  html_document: 
-    keep_md: yes
-    output: github_document
 title: "Reproducible Research 1"
 author: "Jessie Zhou"
 date: "28/12/2020"
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
 # Reproducible Research Project 1
