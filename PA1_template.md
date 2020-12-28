@@ -142,13 +142,6 @@ g+geom_histogram(boundary=0, binwidth=2500, col="blue", fill="lightblue")+ggtitl
 
 ![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
-
-```
-## Warning: Removed 8 rows containing non-finite values (stat_bin).
-```
-
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
-
 #Mean
 
 ```r
@@ -183,9 +176,7 @@ h <- ggplot(StepsPerTime, aes(time, steps))
 h+geom_line(col="darkblue")+ggtitle("Average steps per time interval")+xlab("Time")+ylab("Steps")+theme(plot.title = element_text(face="bold", size=12))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
-
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 
 #5-minute interval with the maximum number of steps
 
@@ -272,9 +263,7 @@ g <- ggplot(StepsPerDayFull, aes(Steps))
 g+geom_histogram(boundary=0, binwidth=2500, col="lightblue", fill="skyblue")+ggtitle("Histogram of steps per day")+xlab("Steps")+ylab("Frequency")+theme(plot.title = element_text(face="bold", size=12))+scale_x_continuous(breaks=seq(0,25000,2500))+scale_y_continuous(breaks=seq(0,26,2))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
-
-![](PA1_template_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
 
 #Mean and median total number of steps taken per day
 
@@ -332,8 +321,6 @@ j <- ggplot(StepsPerTimeDT, aes(time, steps))
 j+geom_line(col="darkgreen")+ggtitle("Average steps per time interval: Weekdays vs. Weekends")+xlab("Time")+ylab("Steps")+theme(plot.title = element_text(face="bold", size=12))+facet_grid(DayType ~ .)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-18-1.png)<!-- -->
-
-![](PA1_template_files/figure-html/unnamed-chunk-19-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
 
 rmarkdown::render("PA1_template.Rmd")
