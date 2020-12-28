@@ -9,9 +9,7 @@ title: "Reproducible Research 1"
 author: "Jessie Zhou"
 date: "28/12/2020"
 output: html_document
----install.packages("rmarkdown")
-
-# Reproducible Research Project 1
+---
 
 ## 1. Loading and preprocessing the data
 
